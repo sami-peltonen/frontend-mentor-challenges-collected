@@ -62,7 +62,7 @@ After positioning the circular background elements, I used "transform: translate
 
 ### Continued development
 
-I need to continue exploring element positioning, as I feel I haven't yet fully grasped the interplay of differently positioned elements.
+I need to continue exploring element positioning (fixed, relative etc.), as I feel I haven't yet fully grasped the interplay between differently positioned elements.
 
 ## Author
 
