@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+  --clr-primary-100: hsl(31, 77%, 52%);
+  --clr-primary-200: hsl(184, 100%, 22%);
+  --clr-primary-300: hsl(179, 100%, 13%);
+
+  --clr-neutral-100: hsl(0, 0%, 95%);
+  --clr-neutral-200: hsla(0, 0%, 100%, 0.75);
+
+  --ff-primary: "Big Shoulders Display", sans-serif;
+  --ff-secondary: "Lexend Deca", sans-serif;
+}
+
+body,
+div,
+h1,
+h2,
+p,
+img,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--clr-neutral-100);
+  box-sizing: border-box;
+  font-family: var(--ff-secondary);
+  font-size: 15px;
+}
+
+main {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-neutral-100);
+}
+
+.container {
+  display: grid;
+}
+
+.product1,
+.product2,
+.product3 {
+  padding: 2rem 2rem 2rem 2rem;
+  margin: 5vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+
+.product1 {
+  background-color: var(--clr-primary-100);
+}
+
+.product2 {
+  background-color: var(--clr-primary-200);
+}
+
+.product3 {
+  background-color: var(--clr-primary-300);
+}
+
+img {
+  width: 30%;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-family: var(--ff-primary);
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 2rem;
+  max-width: 20rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: var(--clr-neutral-200);
+}
+
+button {
+  width: 9rem;
+  height: 3rem;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  padding: 0.6rem 0rem;
+  border-radius: 25px;
+  border: none;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: inherit;
+  color: white;
+  outline: 2px solid white;
+}
+
+.button1 {
+  color: var(--clr-primary-100);
+}
+
+.button2 {
+  color: var(--clr-primary-200);
+}
+
+.button3 {
+  color: var(--clr-primary-300);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 700px) {
+  main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product1,
+  .product2,
+  .product3 {
+    margin: 2vw;
+  }
+
+  p {
+    max-width: 14rem;
+    font-size: 1rem;
+  }
+}
